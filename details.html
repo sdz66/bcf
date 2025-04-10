@@ -37,16 +37,19 @@
   <div class="container">
     <div class="product-info-container">
       <div class="product-image-container">
-        <img src="" alt="商品图片" class="product-image" id="productImage">
+        <video controls autoplay muted loop class="product-image" id="productImage" style="width: 80%; height: auto; max-width: 100%; aspect-ratio: 1/1;"><source src="images/v2.mp4" type="video/mp4"></video>
         <div class="image-gallery">
+          <video controls autoplay muted loop class="thumbnail">
+            <source src="images/v2.mp4" type="video/mp4">
+          </video>
           <img src="" alt="缩略图1" class="thumbnail">
           <img src="" alt="缩略图2" class="thumbnail">
-          <img src="" alt="缩略图3" class="thumbnail">
         </div>
       </div>
 
       <div class="product-info">
-        <h1 id="productName">商品名称</h1>
+        <br><br><br><br><br><br>
+        <h1 id="productName">商品名称</h1><br>
         <div class="product-rating">
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
@@ -56,7 +59,7 @@
           <span>(4.5)</span>
         </div>
         <p class="product-price" id="productPrice">¥0.00</p>
-        <p class="product-description" id="productDescription">商品描述信息将在这里显示。</p>
+        <p class="product-description" id="productDescription">商品描述信息将在这里显示。</p><br><br>
 
         <div class="product-actions">
           <div class="quantity-selector">
@@ -88,18 +91,28 @@
 
     <div class="product-tabs">
       <div class="tab-header">
-        <button class="tab-btn active" data-tab="description">材料准备</button>
-        <button class="tab-btn" data-tab="reviews">做法步骤</button>
+        <button class="tab-btn active" data-tab="description">做法步骤</button>
+        <button class="tab-btn" data-tab="reviews">用户评价</button>
         <button class="tab-btn" data-tab="recommendations">注意事项</button>
       </div>
 
       <div class="tab-content">
-        <div class="tab-pane active" id="description">
-          <h2>详细介绍</h2>
+        <div class="tab-pane active" id="description">    
           <div class="product-details-content">
-            <!-- 商品详情内容将在这里动态加载 -->
-            <p>这里是商品的详细介绍内容，包括食材来源、制作方法、功效与作用等详细信息。</p>
-            <p>您可以在这里了解更多关于商品的特点和使用方法。</p>
+            <!-- 做法步骤内容将在这里动态加载 -->
+            <p>这里是商品的做法步骤，包括详细的操作流程和注意事项。</p>
+            <p>您可以在这里了解如何制作和使用该商品。</p>
+          </div>
+        </div>        
+
+        <div class="tab-pane" id="recommendations">
+          <h2>注意事项</h2>
+          <div class="recommendations-container">
+            <p>1. 本产品为药膳汤品，建议在专业中医师指导下食用。</p>
+            <p>2. 孕妇、哺乳期妇女及特殊体质人群请谨慎食用。</p>
+            <p>3. 请将产品置于阴凉干燥处保存，避免阳光直射。</p>
+            <p>4. 开袋后请尽快食用，建议在24小时内食用完毕。</p>
+            <p>5. 如发现包装破损或产品变质，请勿食用。</p>
           </div>
         </div>
 
@@ -124,17 +137,6 @@
           </div>
         </div>
 
-        <div class="tab-pane" id="recommendations">
-          <h2>相关推荐</h2>
-          <div class="recommendations-container">
-            <!-- 相关推荐商品将在这里动态加载 -->
-            <div class="recommendation-item">
-              <img src="images/sp1.jpg" alt="推荐商品">
-              <h3>相关推荐商品</h3>
-              <p class="price">¥29.99</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -191,12 +193,12 @@
       name: '五指毛桃排骨汤',
       description: '温补去湿汤，适合体质虚弱者。',
       price: '¥35.99',
-      image: 'images/sp2.jpg',
-      thumbnails: ['images/sp2.jpg', 'images/sp3.jpg', 'images/sp4.jpg'],
+      image: 'images/v2.mp4',
+      thumbnails: ['images/v2.mp4', 'images/sp2.jpg', 'images/sp21.jpg'],
       category: '汤品',
       shipping: '全国包邮',
       service: '7天无理由退换',
-      details: '五指毛桃排骨汤是一道具有健脾祛湿、益气强身功效的汤品。五指毛桃根含有多种氨基酸和微量元素，与排骨搭配煮汤，既能去除湿气，又能补充蛋白质和钙质。这道汤品适合体质虚弱、容易疲劳、消化不良的人群饮用。'
+      details: '材料准备：<br><br>• 排骨：500克（选择新鲜的肋排，肉质更嫩）<br>• 五指毛桃：50克（干品，需提前浸泡）<br>·莲子：20克（干品，需提前浸泡，去芯）<br>• 芡实：20克（干品，需提前浸泡）<br>• 茯苓：20克（干品，需提前浸泡）<br>• 赤小豆：20克（干品，需提前浸泡）<br>• 薏米仁：20克（干品，需提前浸泡，炒制过的薏米更佳）<br>• 姜：2片（切片）<br>• 盐：适量（根据个人口味调整）<br><br>做法步骤：<br><br>1.材料预处理：<br>• 五指毛桃：提前30分钟用清水浸泡，泡软后洗净。<br>• 莲子、芡实、茯苓、赤小豆、薏米仁：提前30分钟用清水浸泡，泡软后洗净。薏米仁如果是生的，需要先炒制，炒至微黄即可，这样有助于去除薏米的寒性。<br>2.排骨焯水：<br>• 将排骨放入冷水锅中，水量要没过排骨。<br>• 开火加热，待水沸腾后，撇去浮沫。<br>• 将排骨捞出，用清水冲洗干净，沥干水分。<br>3.准备炖锅：<br>• 将处理好的排骨、五指毛桃、莲子、芡实、茯苓、赤小豆、薏米仁、姜片一起放入锅中。<br>• 加入适量的清水，水量要没过所有材料，大约高出2-3厘米。<br>4.炖煮：<br>• 开大火煮沸，然后转小火，盖上锅盖，慢炖1.5小时。<br>5.调味：<br>• 1.5小时后，打开锅盖，加入适量的盐，根据个人口味调整。<br>• 继续煮5分钟，让盐充分溶解，然后关火。<br>6.出锅：<br>• 将煮好的五指毛桃排骨汤倒入碗中，即可享用。'
     },
     // 添加更多商品数据...
   ];
@@ -236,7 +238,7 @@
                         </div>
                     </div>
                     <p class="review-content">喝了这个汤之后，感觉湿气减轻了很多，身体也轻松了不少。</p>
-                    <p class="review-date">2023-05-15</p>
+                    <p class="review-date">2025-03-15</p>
                 </div>
                 <div class="review-item">
                     <div class="review-header">
@@ -250,23 +252,14 @@
                         </div>
                     </div>
                     <p class="review-content">汤的味道很鲜美，食材新鲜，家人很喜欢。</p>
-                    <p class="review-date">2023-05-10</p>
+                    <p class="review-date">2025-04-01</p>
                 </div>
             `;
 
-    // 相关推荐商品
+    // 注意事项内容
     const recommendationsContainer = document.querySelector('.recommendations-container');
     recommendationsContainer.innerHTML = `
-                <div class="recommendation-item">
-                    <img src="${product.thumbnails[0]}" alt="推荐商品">
-                    <h3>相关推荐商品1</h3>
-                    <p class="price">${product.price}</p>
-                </div>
-                <div class="recommendation-item">
-                    <img src="${product.thumbnails[1]}" alt="推荐商品">
-                    <h3>相关推荐商品2</h3>
-                    <p class="price">${product.price}</p>
-                </div>
+                <p>春季气候潮湿：适合食用此汤，有助于平和去湿。<br>适用人群：2岁以上儿童可用，蚕豆病患者也可食用。<br>盐的用量：根据个人口味，可以适当调整盐的用量。<br>焯水：焯水可以去除排骨中的血水和杂质，使汤更清澈。<br> 慢炖：慢炖可以使排骨更软烂，同时让汤更鲜美。<br>调味：最后加盐可以保持汤的鲜美，过早加盐可能会使排骨变硬。<br></p>
             `;
   } else {
     // 如果没有找到对应的商品，显示错误信息
